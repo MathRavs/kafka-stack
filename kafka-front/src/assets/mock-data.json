@@ -1,0 +1,294 @@
+{
+  "simpleItems": [
+    "First item",
+    "Second item",
+    "Third item",
+    "Fourth item",
+    "Fifth item",
+    "Sixth item",
+    "Seventh item",
+    "Eighth item",
+    "Ninth item",
+    "Tenth item"
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Complete project documentation",
+      "description": "Write comprehensive documentation for the new feature",
+      "status": "pending",
+      "priority": "high",
+      "category": "Development",
+      "createdAt": "2024-01-15T00:00:00.000Z",
+      "tags": ["documentation", "project"]
+    },
+    {
+      "id": "2",
+      "title": "Review pull request #123",
+      "description": "Code review for user authentication feature",
+      "status": "active",
+      "priority": "medium",
+      "category": "Code Review",
+      "createdAt": "2024-01-16T00:00:00.000Z",
+      "tags": ["review", "authentication"]
+    },
+    {
+      "id": "3",
+      "title": "Update dependencies",
+      "description": "Update all npm packages to latest versions",
+      "status": "completed",
+      "priority": "low",
+      "category": "Maintenance",
+      "createdAt": "2024-01-14T00:00:00.000Z",
+      "tags": ["dependencies", "maintenance"]
+    },
+    {
+      "id": "4",
+      "title": "Fix critical bug in production",
+      "description": "Users cannot login due to authentication error",
+      "status": "active",
+      "priority": "urgent",
+      "category": "Bug Fix",
+      "createdAt": "2024-01-17T00:00:00.000Z",
+      "tags": ["bug", "critical", "production"]
+    },
+    {
+      "id": "5",
+      "title": "Plan team meeting agenda",
+      "description": "Prepare topics for weekly team sync",
+      "status": "pending",
+      "priority": "medium",
+      "category": "Planning",
+      "createdAt": "2024-01-17T00:00:00.000Z",
+      "tags": ["meeting", "planning"]
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "title": "John Doe",
+      "description": "Senior Software Engineer",
+      "status": "active",
+      "category": "Engineering",
+      "createdAt": "2023-06-01T00:00:00.000Z",
+      "tags": ["senior", "backend"]
+    },
+    {
+      "id": "2",
+      "title": "Jane Smith",
+      "description": "Product Manager",
+      "status": "active",
+      "category": "Product",
+      "createdAt": "2023-08-15T00:00:00.000Z",
+      "tags": ["product", "management"]
+    },
+    {
+      "id": "3",
+      "title": "Mike Johnson",
+      "description": "UI/UX Designer",
+      "status": "active",
+      "category": "Design",
+      "createdAt": "2023-09-20T00:00:00.000Z",
+      "tags": ["design", "ui", "ux"]
+    },
+    {
+      "id": "4",
+      "title": "Sarah Wilson",
+      "description": "QA Engineer",
+      "status": "inactive",
+      "category": "Quality Assurance",
+      "createdAt": "2023-07-10T00:00:00.000Z",
+      "tags": ["qa", "testing"]
+    },
+    {
+      "id": "5",
+      "title": "Alex Brown",
+      "description": "DevOps Engineer",
+      "status": "active",
+      "category": "Operations",
+      "createdAt": "2023-10-05T00:00:00.000Z",
+      "tags": ["devops", "infrastructure"]
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "title": "Premium Widget Pro",
+      "description": "High-quality widget with advanced features",
+      "status": "active",
+      "priority": "high",
+      "category": "Electronics",
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "tags": ["premium", "electronics", "featured"]
+    },
+    {
+      "id": "2",
+      "title": "Basic Widget",
+      "description": "Simple widget for everyday use",
+      "status": "active",
+      "priority": "medium",
+      "category": "Electronics",
+      "createdAt": "2024-01-05T00:00:00.000Z",
+      "tags": ["basic", "electronics"]
+    },
+    {
+      "id": "3",
+      "title": "Smart Gadget X",
+      "description": "IoT-enabled smart device",
+      "status": "pending",
+      "priority": "high",
+      "category": "Smart Home",
+      "createdAt": "2024-01-10T00:00:00.000Z",
+      "tags": ["iot", "smart-home", "new"]
+    },
+    {
+      "id": "4",
+      "title": "Vintage Collection Item",
+      "description": "Limited edition vintage piece",
+      "status": "inactive",
+      "priority": "low",
+      "category": "Collectibles",
+      "createdAt": "2023-12-20T00:00:00.000Z",
+      "tags": ["vintage", "limited", "collectible"]
+    },
+    {
+      "id": "5",
+      "title": "Eco-Friendly Product",
+      "description": "Sustainable and environmentally friendly",
+      "status": "active",
+      "priority": "medium",
+      "category": "Sustainability",
+      "createdAt": "2024-01-12T00:00:00.000Z",
+      "tags": ["eco-friendly", "sustainable", "green"]
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1",
+      "title": "System Update Available",
+      "description": "A new system update is ready to install",
+      "status": "active",
+      "priority": "high",
+      "category": "System",
+      "createdAt": "2024-01-17T12:00:00.000Z",
+      "tags": ["system", "update"]
+    },
+    {
+      "id": "2",
+      "title": "New Message from John",
+      "description": "You have a new message in your inbox",
+      "status": "active",
+      "priority": "medium",
+      "category": "Communication",
+      "createdAt": "2024-01-17T11:55:00.000Z",
+      "tags": ["message", "inbox"]
+    },
+    {
+      "id": "3",
+      "title": "Backup Completed",
+      "description": "Daily backup has been completed successfully",
+      "status": "completed",
+      "priority": "low",
+      "category": "System",
+      "createdAt": "2024-01-17T11:00:00.000Z",
+      "tags": ["backup", "completed"]
+    },
+    {
+      "id": "4",
+      "title": "Payment Failed",
+      "description": "Your recent payment could not be processed",
+      "status": "active",
+      "priority": "urgent",
+      "category": "Finance",
+      "createdAt": "2024-01-17T11:30:00.000Z",
+      "tags": ["payment", "failed", "urgent"]
+    },
+    {
+      "id": "5",
+      "title": "Welcome to Our Platform",
+      "description": "Thank you for joining us! Get started with our quick tour",
+      "status": "active",
+      "priority": "medium",
+      "category": "Welcome",
+      "createdAt": "2024-01-17T10:00:00.000Z",
+      "tags": ["welcome", "onboarding"]
+    }
+  ],
+  "files": [
+    {
+      "id": "1",
+      "title": "project-documentation.pdf",
+      "description": "PDF document - 2.5 MB",
+      "status": "active",
+      "category": "Documents",
+      "createdAt": "2024-01-15T00:00:00.000Z",
+      "tags": ["pdf", "documentation"]
+    },
+    {
+      "id": "2",
+      "title": "user-avatar.jpg",
+      "description": "Image file - 150 KB",
+      "status": "active",
+      "category": "Images",
+      "createdAt": "2024-01-16T00:00:00.000Z",
+      "tags": ["image", "avatar"]
+    },
+    {
+      "id": "3",
+      "title": "data-export.csv",
+      "description": "CSV file - 1.2 MB",
+      "status": "active",
+      "category": "Data",
+      "createdAt": "2024-01-17T00:00:00.000Z",
+      "tags": ["csv", "data", "export"]
+    },
+    {
+      "id": "4",
+      "title": "presentation.pptx",
+      "description": "PowerPoint file - 5.8 MB",
+      "status": "active",
+      "category": "Presentations",
+      "createdAt": "2024-01-14T00:00:00.000Z",
+      "tags": ["powerpoint", "presentation"]
+    },
+    {
+      "id": "5",
+      "title": "code-snippet.js",
+      "description": "JavaScript file - 45 KB",
+      "status": "active",
+      "category": "Code",
+      "createdAt": "2024-01-17T00:00:00.000Z",
+      "tags": ["javascript", "code"]
+    }
+  ],
+  "metadata": {
+    "totalItems": 25,
+    "categories": [
+      "Development",
+      "Code Review", 
+      "Maintenance",
+      "Bug Fix",
+      "Planning",
+      "Engineering",
+      "Product",
+      "Design",
+      "Quality Assurance",
+      "Operations",
+      "Electronics",
+      "Smart Home",
+      "Collectibles",
+      "Sustainability",
+      "System",
+      "Communication",
+      "Finance",
+      "Welcome",
+      "Documents",
+      "Images",
+      "Data",
+      "Presentations",
+      "Code"
+    ],
+    "statuses": ["active", "inactive", "pending", "completed"],
+    "priorities": ["low", "medium", "high", "urgent"]
+  }
+} 
