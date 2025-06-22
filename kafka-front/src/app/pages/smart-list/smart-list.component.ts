@@ -1,6 +1,6 @@
 import { Component, OnInit, inject, signal, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ListComponent } from '../list/list.component';
+import { ListComponent } from '../../components/list/list.component';
 import { MockDataService, ListItem } from '../../services/mock-data.service';
 
 @Component({
@@ -64,16 +64,17 @@ import { MockDataService, ListItem } from '../../services/mock-data.service';
           itemVariant="default"
           [showActions]="true"
           (onItemClick)="handleSimpleItemClick($event)"
+          [actionsTemplate]="actionsTemplate"
         >
-          <ng-container slot="item-actions">
-            <button 
-              class="px-3 py-1 text-sm bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors"
-              (click)="handleSimpleActionClick($event, $any($event.target.closest('li').textContent?.trim()))"
-            >
-              View
-            </button>
-          </ng-container>
         </app-list>
+        <ng-template #actionsTemplate let-item="item">
+          <button 
+            class="px-3 py-1 text-sm bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors"
+            (click)="handleSimpleActionClick($event, item)"
+          >
+            View
+          </button>
+        </ng-template>
       }
 
       <!-- Complex List -->
@@ -264,8 +265,9 @@ export class SmartListComponent implements OnInit {
     console.log('Simple item clicked:', event.item);
   }
 
-  handleSimpleActionClick(event: MouseEvent): void {
+  handleSimpleActionClick(event: MouseEvent, item: ListItem): void {
     event.stopPropagation();
+    console.log('Simple action clicked:', item);
   }
 
   handleComplexItemClick(event: MouseEvent, item: ListItem): void {

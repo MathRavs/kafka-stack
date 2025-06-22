@@ -1,10 +1,11 @@
-import { Component, input, output, computed } from '@angular/core';
+import { Component, input, output, computed, TemplateRef } from '@angular/core';
 import { ListItemComponent } from '../list-item/list-item.component';
+import { NgTemplateOutlet } from '@angular/common';
 
 @Component({
   selector: 'app-list',
   standalone: true,
-  imports: [ListItemComponent],
+  imports: [ListItemComponent, NgTemplateOutlet],
   template: `
     <div class="w-full">
       @if (title()) {
@@ -31,7 +32,9 @@ import { ListItemComponent } from '../list-item/list-item.component';
             >
               {{ item }}
               <ng-container slot="actions">
-                <ng-content select="[slot=item-actions]"></ng-content>
+                @if(actionsTemplate()){
+                  <ng-container *ngTemplateOutlet="actionsTemplate(); context: { item }"></ng-container>
+                }
               </ng-container>
             </app-list-item>
           }
@@ -51,6 +54,7 @@ import { ListItemComponent } from '../list-item/list-item.component';
   styles: []
 })
 export class ListComponent {
+  actionsTemplate = input<TemplateRef<any> | null>(null);
   items = input<string[]>([]);
   title = input<string | undefined>(undefined);
   subtitle = input<string | undefined>(undefined);

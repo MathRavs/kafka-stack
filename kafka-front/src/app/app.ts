@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SmartListComponent } from './components/smart-list/smart-list.component';
+import { SmartListComponent } from './pages/smart-list/smart-list.component';
 
 @Component({
   selector: 'app-root',
