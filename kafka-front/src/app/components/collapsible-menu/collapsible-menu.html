@@ -1,0 +1,28 @@
+  
+
+<!-- Trigger Button -->
+<ng-template #trigger let-classes="classes">
+    <button
+    (click)="toggleMenu()"
+    [class]="`${classes} bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 cursor-pointer`"
+  >
+    {{ isOpen() ? 'Close' : 'Menu' }}
+  </button>
+</ng-template>
+
+<!-- Right-Side Menu -->
+
+@if(!isOpen()){
+    <ng-container *ngTemplateOutlet="trigger; context: {classes: 'fixed top-4 right-4 z-50'}"></ng-container>
+}
+
+<div
+  class="fixed top-0 right-0 h-full w-64 bg-white border-l border-gray-200 shadow-lg transform transition-transform duration-300 ease-in-out z-40"
+  [class.translate-x-0]="isOpen()"
+  [class.translate-x-full]="!isOpen()"
+>
+  <div class="p-4 space-y-4 flex flex-col gap-2">
+    <ng-container *ngTemplateOutlet="trigger; context: {classes: ''}"></ng-container>
+    <ng-content></ng-content>
+  </div>
+</div>

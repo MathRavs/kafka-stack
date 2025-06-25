@@ -1,5 +1,8 @@
 <div class="min-h-screen bg-gray-50">
   <header class="bg-white shadow-sm border-b flex flex-col gap-2">
+    <app-collapsible-menu>
+      <app-event-list></app-event-list>
+    </app-collapsible-menu>
     <div class="container mx-auto px-6 py-4">
       <h1 class="text-2xl font-bold text-gray-900 text-center">{{ title }}</h1>
     </div>
@@ -8,6 +11,5 @@
   
   <main class="py-8 flex flex-col gap-4">
     <app-smart-list></app-smart-list>
-    <app-event-list></app-event-list>
   </main>
 </div>
