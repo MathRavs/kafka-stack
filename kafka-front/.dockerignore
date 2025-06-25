@@ -1,0 +1,36 @@
+# Node modules (rebuilt inside the container)
+node_modules
+dist
+tmp
+temp
+
+# IDE/editor settings
+.vscode
+.idea
+*.sublime-project
+*.sublime-workspace
+
+# OS/Tool-specific files
+.DS_Store
+Thumbs.db
+
+# Git and version control
+.git
+.gitignore
+
+# Environment & config
+.env
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Angular build outputs (local)
+.angular
+coverage
+
+# Docker-related
+Dockerfile
+.dockerignore
