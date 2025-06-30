@@ -4,7 +4,7 @@
 <ng-template #trigger let-classes="classes">
     <button
     (click)="toggleMenu()"
-    [class]="`${classes} bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 cursor-pointer`"
+    [class]="`${classes} w-20 h-10 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 cursor-pointer`"
   >
     {{ isOpen() ? 'Close' : 'Menu' }}
   </button>
@@ -13,7 +13,9 @@
 <!-- Right-Side Menu -->
 
 @if(!isOpen()){
-    <ng-container *ngTemplateOutlet="trigger; context: {classes: 'fixed top-4 right-4 z-50'}"></ng-container>
+    <ng-container *ngTemplateOutlet="trigger; context: {classes: 'z-50'}"></ng-container>
+} @else {
+  <span class="h-10 w-20" aria-hidden="true"></span>
 }
 
 <div
@@ -21,7 +23,7 @@
   [class.translate-x-0]="isOpen()"
   [class.translate-x-full]="!isOpen()"
 >
-  <div class="p-4 space-y-4 flex flex-col gap-2">
+  <div class="p-4 space-y-4 flex flex-col gap-2 items-center">
     <ng-container *ngTemplateOutlet="trigger; context: {classes: ''}"></ng-container>
     <ng-content></ng-content>
   </div>

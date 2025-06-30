@@ -5,7 +5,7 @@ import { NgTemplateOutlet } from '@angular/common';
   selector: 'app-collapsible-menu',
   templateUrl: './collapsible-menu.html',
   host: {
-    class: 'w-full mx-auto'
+    class: 'flex justify-end m-2'
   },
   imports: [NgTemplateOutlet]
 })

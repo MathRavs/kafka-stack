@@ -1,0 +1,24 @@
+<div class="flex justify-center items-center min-h-screen bg-gradient-to-br from-blue-500 to-purple-600 p-5">
+  <div class="bg-white rounded-2xl shadow-2xl p-12 w-full max-w-md text-center">
+    <div class="mb-8">
+      <h1 class="text-3xl font-semibold text-gray-800 mb-2">Welcome to Kafka Front</h1>
+      <p class="text-gray-600">Please sign in to continue</p>
+    </div>
+    
+    <div class="mb-8">
+      <button 
+        class="w-full cursor-pointer flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 active:translate-y-0"
+        (click)="login()"
+        type="button">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+        Sign In
+      </button>
+    </div>
+    
+    <div>
+      <p class="text-sm text-gray-500 leading-relaxed">By signing in, you agree to our terms of service and privacy policy.</p>
+    </div>
+  </div>
+</div> 
