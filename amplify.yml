@@ -11,7 +11,7 @@ applications:
           commands:
             - npm run build
       artifacts:
-        baseDirectory: dist/browser
+        baseDirectory: dist/kafka-front/browser
         files:
           - '**/*'
       cache:
