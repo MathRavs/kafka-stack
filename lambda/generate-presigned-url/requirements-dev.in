@@ -1,0 +1,7 @@
+black
+flake8
+flake8-bugbear
+flake8-comprehensions
+flake8-import-order
+pre-commit
+boto3-stubs[s3]

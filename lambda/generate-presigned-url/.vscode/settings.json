@@ -1,0 +1,6 @@
+{
+    "python.languageServer": "None",
+    "pyright.disableLanguageServices": false,
+    "pyright.disableOrganizeImports": false
+  }
+  

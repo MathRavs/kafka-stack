@@ -1,0 +1,6 @@
+{
+    "include": ["fastapi_app"],
+    "extraPaths": ["fastapi_app"],
+    "typeCheckingMode": "strict"
+}
+  
